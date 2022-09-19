@@ -1,0 +1,65 @@
+#wall {
+    width: 1000px;
+    height: 360px;
+    background-color: #292929;
+}
+
+.stone {
+    height: 25px;
+    width: 100px;
+    display: inline-block;
+    animation: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-right: 5px;
+}
+@keyframes rainbow {
+    100%,0% {
+        background-color: rgb(255,0,0);
+    }
+    8% {
+        background-color: rgb(255,127,0);
+    }
+    16% {
+        background-color: rgb(255,255,0);
+    }
+    25% {
+        background-color: rgb(127,255,0);
+    }
+    33% {
+        background-color: rgb(0,255,0);
+    }
+    41% {
+        background-color: rgb(0,255,127);
+    }
+    50% {
+        background-color: rgb(0,255,255);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+    }
+    66% {
+        background-color: rgb(0,0,255);
+    }
+    75% {
+        background-color: rgb(127,0,255);
+    }
+    83% {
+        background-color: rgb(255,0,255);
+    }
+    91% {
+        background-color: rgb(255,0,127);
+    }
+}
+.row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.small {
+    width: 80px;
+}
+
+.no_right {
+    margin-right: 0px;
+}
